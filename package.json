@@ -1,5 +1,6 @@
 {
   "name": "style-snap",
+  "homepage": "https://juhi-rathor.github.io/style-snap",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +20,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"No tests configured.\" && exit 0"
+    "test": "echo \"No tests configured.\" && exit 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +44,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
+    "gh-pages": "^6.3.0",
     "vite": "^5.4.0"
   }
 }

@@ -75,3 +75,22 @@ npm run build
 ```
 This generates optimized assets under the `dist/` directory.
 
+---
+
+## 🌐 Deployment (GitHub Pages)
+
+To deploy this project to GitHub Pages:
+
+1. **Commit and Push Changes**:
+   ```bash
+   git add .
+   git commit -m "Configure gh-pages deployment"
+   git push origin main
+   ```
+
+2. **Deploy to GitHub Pages**:
+   ```bash
+   npm run deploy
+   ```
+
+
