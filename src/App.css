@@ -1,0 +1,621 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR CONTENTS STYLE */
+
+.navigation-bar {
+    background-color: rgb(243, 241, 241);
+}
+
+.logo-heading {
+    color: #f7444e;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+ul li {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.anchor-tag {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.active {
+    color: #ff1493 !important;
+}
+
+/* HOME PAGE STYLINGS */
+
+.background-1 {
+    background-image: url("./images/home-bg.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.text-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container h1 {
+    color: #002c3e;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+}
+
+.heading-1 {
+    color: #f7444e;
+}
+
+.para-1 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-family: "Playfair Display", serif;
+    /* line-height: 1.6; */
+    width: 45%;
+}
+
+.background-1 button, .background-3 button {
+    color: white;
+    background-color: #f7444e;
+    font-weight: 500;
+    width: 20%;
+    border: 1px solid #f7444e;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.background-1 button:hover {
+    padding: 13px;
+    border: 1px solid #f7444e;
+    color: #f7444e;
+    background-color: rgb(201, 200, 198);
+}
+
+@media (max-width: 1440px) {
+    .background-1 button {
+        width: 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .background-1 button {
+        width: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .background-1 button {
+        width: 20%;
+    }
+
+    .custom-flex-1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container h1 {
+        text-align: center;
+    }
+
+    .heading-2 {
+        text-align: center;
+    }
+
+    .para-1 {
+        text-align: center;
+        width: 75%;
+    }
+
+    .background-1 {
+        background-image: linear-gradient(to right,
+                rgb(248, 216, 235),
+                rgb(200, 230, 255));
+    }
+}
+
+@media (max-width: 425px) {
+    .background-1 button {
+        width: 40%;
+    }
+
+    .para-1 {
+        width: 100%;
+    }
+
+    h1,
+    .heading-2 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .background-1 button {
+        width: 50%;
+    }
+
+    .custom-flex-1 {
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-container {
+        align-items: start;
+    }
+}
+
+/* ABOUT PAGE STYLINGS */
+
+.background-2 {
+    background-image: linear-gradient(to right,
+            rgb(248, 216, 235),
+            rgb(200, 230, 255));
+    min-height: calc(100vh - 52px);
+}
+
+.custom-flex-2 {
+    padding-top: 30px;
+}
+
+.heading-2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #f7444e;
+    font-family: "Montserrat", sans-serif;
+}
+
+.heading-3 {
+    font-size: 45px;
+    font-weight: 600;
+    color: black;
+    font-family: "Playfair Display", serif;
+}
+
+.cards-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+.card-price {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-text {
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 425px) {
+    .heading-3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .heading-2 {
+        font-size: 40px;
+    }
+
+    .heading-3 {
+        font-size: 40px;
+    }
+}
+
+/* CONTACT PAGE STYLINGS */
+
+.background-2 form {
+    width: 100%;
+}
+
+.heading-4 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #f7444e;
+    font-family: "Montserrat", sans-serif;    
+}
+
+.contact-field {
+    width: 90%;
+    height: 60px;
+    padding-left: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.submit-button {
+    color: black;
+    border: 2px solid #f7444e;
+    color: #f7444e;
+    border-radius: 10px;
+    font-weight: 500;
+    width: 20%;
+    padding: 12px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.submit-button:hover {
+    background-color: #f7444e;
+    border: 2px solid #f7444e;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .submit-button {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) {
+        .background-2 form {
+        width: 65%;
+    }
+}
+
+/* PRODUCT PAGE STYLINGS */
+.product-card {
+    width: 85%;      
+    max-width: 300px; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+.card-price {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.seemorebtn {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: white;
+    background-color: #f7444e;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* NEWARRIVAL PAGE STYLINGS */
+
+.background-3 {
+    /* background-image: url("./images/arrival-bg.png");    */
+    background-image: linear-gradient(to right, rgb(248, 216, 235),rgb(200, 230, 255));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-3 h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #002c3e;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.background-3 p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: #0c0c0c;
+}
+
+.background-3 .para-2{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: #0c0c0c;
+    line-height: 20px;
+    /* width: 410px; */
+    text-align: center;
+}
+
+@media (max-width: 320px) {
+    .background-3 button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 375px) {
+    .background-3 button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 425px) {
+    .background-3 button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .background-3 {
+        justify-content: center;        
+    }
+
+    .background-3 h2, .background-3 p, .background-3 .para-2{
+        text-align: center;
+    }
+    
+    .background-3 button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .background-3 button {
+        width: 30%;
+    }
+}
+
+/* FOOTER COMPONENT STYLINGS */
+.footer-menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    justify-content: center;
+}
+
+.footer-menu li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+li .navlink {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+.allrights {
+    font-size: 16px;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+ .para-3 {
+    color: black;
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.col-fourth p{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #0c0c0c;
+}
+ 
+.input-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter-input {
+    height: 40px;
+    padding-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+.input-container button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 15px;
+    color: white;
+    background-color: #f7444e;
+    border: none;
+    border-radius: 5px;   
+}
+
+p span {
+    color: #f7444e;
+    font-family: "Montserrat", sans-serif;    
+}
+
+.custombg {
+    background-color: #222222;
+}
+
+.custombg p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* LOGIN COMPONENT STYLINGS */
+.background-4 {
+    background-image: linear-gradient(to right, rgb(248, 216, 235),rgb(200, 230, 255));   
+}
+
+.page-full-screen {
+    min-height: 100vh;
+}
+
+.form-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input-label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.form-action-button {
+    background-color: #0d6efd;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-action-button:hover {
+    background-color: #0b5ed7;
+}
+
+.form-link {
+    color: #ff1493;
+}
+
+.form-container {
+    height: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 40px;
+    /* padding: 10px 0; */
+}
+
+.form-container h1{
+    color: rgb(63, 62, 62);
+    font-size: 25px;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 25px;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.form-container p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+}
+
+.input-field {
+    width: 70%;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding-left: 10px;
+}
+
+/* REGISTRATION PAGE STYLINGS */
+
+.background-5 {
+     background-image: linear-gradient(to right,
+            rgb(248, 216, 235),
+            rgb(200, 230, 255));
+    min-height: calc(100vh - 52px);   
+}
+
+.input-field {
+    width: 100%; /* Change from 70% to 100% so it fills its Bootstrap parent */
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding-left: 10px;
+}
+
+/* Ensure the white card itself can expand */
+.form-container {
+    width: 100%;
+    max-width: 550px; /* This allows the card to be wide enough for the inputs */
+    background-color: aliceblue;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.github-account {
+    text-decoration: none;
+}
+
+
+.input-field:focus {
+    border-color: #000;       
+    box-shadow: none;         
+    outline: 0 none;          
+}
